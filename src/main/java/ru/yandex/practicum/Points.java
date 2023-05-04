@@ -9,6 +9,11 @@ public class Points {
         System.out.println(
             "Сумма координат: х = " + pointsSum.getX() + ", y = " + pointsSum.getY()
         );
+        System.out.println(point1.toString());
+
+        final Point point3 = newPoint(2, 2);
+        System.out.println(point2.equals(point3));
+        System.out.print(point2.hashCode() + ":" + point3.hashCode());
     }
 
     public static Point addPoints(final Point point1, final Point point2) {
